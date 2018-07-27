@@ -59,6 +59,19 @@
   -moz-box-shadow: 0px 0px 10px 1px #4f4f4f;
   box-shadow: 0px 0px 10px 1px #4f4f4f; }
 
+.discount-code-s .discount-bar__button, .schedule-s .schedule-s-content .schedule-button button {
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #FA6755;
+  border-color: #ffffff;
+  border-width: 2px;
+  cursor: pointer; }
+
+.choose-s .collection-at, .schedule-s .schedule-s-content .schedule-button {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 h3, h5 {
   overflow: hidden;
   text-align: center; }
@@ -141,10 +154,7 @@ nav {
     color: #372248;
     width: auto;
     height: 50px;
-    margin: 10px 30px 20px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+    margin: 10px 30px 20px 30px; }
 
 .walkin-s {
   color: #000000;
@@ -211,13 +221,7 @@ nav {
     width: 38%;
     margin: 0px 5px 0px 0px; }
   .discount-code-s .discount-bar__button {
-    border-radius: 10px;
-    width: 10%;
-    color: #ffffff;
-    background-color: #FA6755;
-    border-color: #ffffff;
-    border-width: 2px;
-    cursor: pointer; }
+    width: 10%; }
 
 .breakdown-s {
   width: 100%;
@@ -261,5 +265,11 @@ nav {
 .schedule-s {
   color: #ffffff;
   background-color: #FA6755; }
+  .schedule-s .schedule-s-content .schedule-s-text:nth-of-type(1) {
+    font-size: 35px;
+    margin: 50px 0px 0px 30px; }
+  .schedule-s .schedule-s-content .schedule-s-text:nth-of-type(2) {
+    font-size: 18px;
+    margin: 0px 0px 50px 30px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -58,3 +58,18 @@
   -moz-box-shadow: 0px 0px 10px 1px rgba(79,79,79,1);
   box-shadow: 0px 0px 10px 1px rgba(79,79,79,1);
 }
+
+%no-bg-button {
+  border-radius: $c-border;
+  color: $white;
+  background-color: $orange;
+  border-color: $white;
+  border-width: 2px;
+  cursor: pointer;
+}
+
+%center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -77,9 +77,7 @@ nav {
     width: auto;
     height: 50px;
     margin: 10px 30px 20px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %center;
   }
 }
 
@@ -197,13 +195,8 @@ nav {
     margin: 0px 5px 0px 0px;
   }
   .discount-bar__button {
-    border-radius: $c-border;
     width: 10%;
-    color: $white;
-    background-color: $orange;
-    border-color: $white;
-    border-width: 2px;
-    cursor: pointer;
+    @extend %no-bg-button;
   }
 }
 
@@ -265,4 +258,20 @@ nav {
 .schedule-s {
   color: $white;
   background-color: $orange;
+  .schedule-s-content {
+    .schedule-button {
+      @extend %center;
+      button {
+        @extend %no-bg-button;
+      }
+    }
+    .schedule-s-text:nth-of-type(1) {
+      font-size: 35px;
+      margin: 50px 0px 0px 30px;
+    }
+    .schedule-s-text:nth-of-type(2) {
+      font-size: 18px;
+      margin: 0px 0px 50px 30px;
+    }
+  }
 }
