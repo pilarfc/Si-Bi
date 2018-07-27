@@ -32,6 +32,18 @@ nav {
         }
       }
     }
+    .nav-b-touch {
+      border-radius: 5px;
+      border-color: $main-purple !important;
+      border-width: 2px;
+    }
+    .nav-b-started {
+      background-color: $vibrant-orange;
+      border-radius: 5px;
+      a {
+        color: $white;
+      }
+    }
   }
 }
 

@@ -68,7 +68,7 @@
   cursor: pointer; }
 
 .footer-s .footer-subscribe, .breakdown-s .breakdown-checkout {
-  background-color: #FA6755;
+  background-color: #F46036;
   border: none;
   margin: 0px 0px 20px 0px;
   cursor: pointer; }
@@ -143,6 +143,15 @@ nav {
     nav div ul li a {
       color: #372248;
       text-decoration: none; }
+  nav div .nav-b-touch {
+    border-radius: 5px;
+    border-color: #372248 !important;
+    border-width: 2px; }
+  nav div .nav-b-started {
+    background-color: #F46036;
+    border-radius: 5px; }
+    nav div .nav-b-started a {
+      color: #ffffff; }
 
 .choose-s {
   color: #ffffff;
