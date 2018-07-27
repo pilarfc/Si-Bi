@@ -5,6 +5,8 @@
 
 body {
   font-family: Circular Std;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .w-container {
@@ -225,7 +227,33 @@ nav {
   color: $black;
   background-color: $light-grey;
   .question-div {
-    background-color: $white;
+    .col-6 {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .individual-question, .individual-question-2 {
+      background-color: $white;
+      .ind-question-title {
+        font-size: 25px;
+        padding: 15px 0px 5px 15px;
+      }
+      .ind-question-text {
+        font-size: 18px;
+        padding: 0px 0px 20px 15px;
+      }
+    }
+    .individual-question:nth-of-type(1) {
+      margin: 0px 0px 0px 20px;
+    }
+    .individual-question:nth-of-type(2) {
+      margin: 0px 0px 50px 20px;
+    }
+    .individual-question-2:nth-of-type(1) {
+      margin: 0px 20px 10px 20px;
+    }
+    .individual-question-2:nth-of-type(2) {
+      margin: 0px 20px 10px 20px;
+    }
   }
   .faq--title {
     @extend %bold-titles;

@@ -97,7 +97,9 @@ h3:after, h5:after {
   background-color: #483958; }
 
 body {
-  font-family: Circular Std; }
+  font-family: Circular Std;
+  overflow-y: scroll;
+  overflow-x: hidden; }
 
 .w-container {
   margin-right: auto;
@@ -233,8 +235,25 @@ nav {
 .questions-s {
   color: #000000;
   background-color: #F6F6F6; }
-  .questions-s .question-div {
+  .questions-s .question-div .col-6 {
+    padding-right: 0;
+    padding-left: 0; }
+  .questions-s .question-div .individual-question, .questions-s .question-div .individual-question-2 {
     background-color: #ffffff; }
+    .questions-s .question-div .individual-question .ind-question-title, .questions-s .question-div .individual-question-2 .ind-question-title {
+      font-size: 25px;
+      padding: 15px 0px 5px 15px; }
+    .questions-s .question-div .individual-question .ind-question-text, .questions-s .question-div .individual-question-2 .ind-question-text {
+      font-size: 18px;
+      padding: 0px 0px 20px 15px; }
+  .questions-s .question-div .individual-question:nth-of-type(1) {
+    margin: 0px 0px 0px 20px; }
+  .questions-s .question-div .individual-question:nth-of-type(2) {
+    margin: 0px 0px 50px 20px; }
+  .questions-s .question-div .individual-question-2:nth-of-type(1) {
+    margin: 0px 20px 10px 20px; }
+  .questions-s .question-div .individual-question-2:nth-of-type(2) {
+    margin: 0px 20px 10px 20px; }
   .questions-s .faq--title {
     color: #372248;
     padding: 40px 0px 40px 0px; }
