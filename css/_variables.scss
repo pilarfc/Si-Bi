@@ -1,0 +1,43 @@
+// COLORS
+$white: #ffffff;
+$black: #000000;
+$light-purple: #483958;
+$main-purple: #372248;
+$light-grey: #F6F6F6;
+$bg-grey: #EBE8EC;
+$grey-text: #989898;
+$medium-grey: #F0F0F0;
+$orange: #FA6755;
+$blue-text: #5B85AA;
+
+// FONTS
+
+$brand-bold: CircularStd-Bold;
+$brand-book: CircularStd-Book;
+$brand-italic: CircularStd-BookItalic;
+
+//FONTS
+@font-face {
+font-family: Circular Std;
+src: url(../assets/fonts/CircularStd-Book.otf);
+}
+
+@font-face {
+    font-family: CircularStd-Book;
+    src: url(../assets/fonts/CircularStd-Book.otf);
+}
+
+@font-face {
+    font-family: CircularStd-Bold;
+    src: url(../assets/fonts/CircularStd-Bold.otf);
+}
+
+@font-face {
+    font-family: CircularStd-BookItalic;
+    src: url(../assets/fonts/CircularStd-BookItalic.otf);
+}
+
+
+//BORDER
+
+$c-border: 10px;

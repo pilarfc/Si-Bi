@@ -1,0 +1,60 @@
+//Extend
+
+%bold-titles {
+  font-family: $brand-bold;
+}
+
+%subtitles {
+  font-size: 23px;
+  color: $main-purple;
+}
+
+%first-section-hr {
+  width: 250px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+%storage-section-hr {
+  width: 150px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+%prices {
+  font-size: 40px;
+  color: $main-purple;
+}
+
+%cards-structure {
+  width: 330px;
+  height: 177px;
+  background-color: $white;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+
+%divs-shadows {
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(79,79,79,1);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(79,79,79,1);
+  box-shadow: 0px 0px 10px 1px rgba(79,79,79,1);
+}

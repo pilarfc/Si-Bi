@@ -1,0 +1,240 @@
+@import 'variables';
+@import 'extends';
+@import 'headers';
+@import 'footer';
+
+body {
+  font-family: Circular Std;
+}
+
+.w-container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
+}
+
+// NAV
+
+nav {
+  background-color: $white;
+  font-family: $brand-bold;
+  font-size: 13px;
+  letter-spacing: 0.20px;
+  div {
+    ul {
+      li {
+        list-style: none;
+        a{
+          color: $main-purple;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// END OF NAV
+.choose-s {
+  color: $white;
+  background-color: $main-purple;
+  p {
+    margin-bottom: 0;
+  }
+  hr {
+    @extend %first-section-hr;
+  }
+  .choose-s__title {
+    padding: 75px 0px 30px 0px;
+    @extend %bold-titles;
+  }
+  .choose-s__services{
+    padding: 0px 0px 120px 0px;
+    .choose-s__walkin-div, .choose-s__concierge-div {
+      color: $blue-text;
+      background-color: $white;
+      width: 360px;
+      height: 378px;
+      margin-left: 30px;
+    }
+  }
+  .choose-s__subtitles {
+    @extend %bold-titles;
+    @extend %subtitles;
+    margin: 40px 0px 0px 0px;
+  }
+  .concierge-subtitle {
+    color: $orange !important;
+  }
+  .choose-s__price {
+    @extend %bold-titles;
+    @extend %prices;
+  }
+  .collection-at {
+    background-color: $bg-grey;
+    color: $main-purple;
+    width: auto;
+    height: 50px;
+    margin: 10px 30px 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.walkin-s {
+  color: $black;
+  background-color: $white;
+  .city-card {
+    @extend %cards-structure;
+  }
+  .walkin--title {
+    @extend %bold-titles;
+    color: $main-purple;
+    margin: 50px 0px 40px 0px;
+  }
+  .cities-divs {
+    font-size: 1.75rem;
+    margin: 30px 0px 60px 0px;
+    .la-div {
+      @extend %divs-shadows;
+    }
+  }
+}
+
+
+.partner-s {
+  color: $black;
+  background-color: $light-grey;
+  .partner--header:before, .partner--header:after {
+    width: 20%;
+  }
+  .partner--header {
+    padding: 50px 0px 0px 0px;
+  }
+  .partners-divs {
+    padding: 15px 0px 60px 0px;
+  }
+  .partner-card {
+    @extend %cards-structure;
+    .cards-fontsize {
+      font-size: 12px;
+      margin: auto;
+    }
+  }
+  .doctor-card {
+    @extend %divs-shadows;
+  }
+  .blood-partner {
+    background-color: $medium-grey;
+  }
+}
+
+.storage-s {
+  p {
+    margin-bottom: 0;
+  }
+  hr {
+    @extend %storage-section-hr;
+  }
+  .storage-divs {
+    .storage-card {
+      @extend %cards-structure;
+      height: 302px;
+      .storage-fontsize {
+        font-size: 20px;
+      }
+      .storage-price {
+        font-size: 50px;
+      }
+    }
+    .storage-la-card {
+      @extend %divs-shadows;
+      margin:0;
+    }
+  }
+  .chooselo--header {
+    @extend %bold-titles;
+    margin: 50px 0px 0px 0px;
+  }
+  .storage-divs {
+    margin: 25px 0px 60px 0px;
+  }
+}
+
+.first-order-s {
+  background-color: $light-grey;
+  p {
+    margin-bottom: 0;
+  }
+  .your-order__title {
+    @extend %bold-titles;
+    color: $main-purple;
+    padding: 40px 0px 0px 0px;
+  }
+  .first-order__div {
+    margin: 50px 0px 30px 0px;
+  }
+  .your-order__text:nth-of-type(1), .your-order__text:nth-of-type(3) {
+    font-size: 25px;
+  }
+  .your-order__text:nth-of-type(2) {
+    color: $grey-text;
+  }
+}
+
+.discount-code-s {
+  color: $white;
+  background-color: $orange;
+  .discount-bar {
+    padding: 30px 0px 30px 0px;
+  }
+  .discount-bar__input {
+    border: none;
+    border-radius: $c-border;
+    width: 38%;
+    margin: 0px 5px 0px 0px;
+  }
+  .discount-bar__button {
+    border-radius: $c-border;
+    width: 10%;
+    color: $white;
+    background-color: $orange;
+    border-color: $white;
+    border-width: 2px;
+    cursor: pointer;
+  }
+}
+
+.breakdown-s {
+  width: 100%;
+  box-shadow: 3px 3px 3px #333;
+  position: relative;
+  .breakdown-amounts {
+    margin: 10px 0px 0px 0px;
+  }
+  .breakdown-checkout {
+    background-color: $orange;
+    border: none;
+    width: 45%;
+    margin: 0px 0px 20px 0px;
+    cursor: pointer;
+  }
+}
+
+.questions-s {
+  color: $black;
+  background-color: $light-grey;
+  .question-div {
+    background-color: $white;
+  }
+  .faq--title {
+    @extend %bold-titles;
+    color: $main-purple;
+    padding: 40px 0px 40px 0px;
+  }
+}
+
+.schedule-s {
+  color: $white;
+  background-color: $orange;
+}

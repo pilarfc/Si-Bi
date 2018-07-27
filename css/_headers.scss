@@ -1,0 +1,27 @@
+
+//HEADERS WITH LINES
+h3, h5 {
+  overflow: hidden;
+  text-align: center;
+}
+
+h3:before, h5:before,
+h3:after, h5:after {
+  background-color: $black;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 16%;
+}
+h3:before, h5:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+h3:after, h5:after{
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+// FINISH HEADERS WITH LINES

@@ -1,0 +1,21 @@
+.footer-s {
+  color: $white;
+  background-color: $main-purple;
+  .form-row {
+    margin-left: 0px !important;
+  }
+  ul {
+    li {
+      list-style: none;
+      a{
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.copyright {
+  color: $white;
+  background-color: $light-purple;
+}
