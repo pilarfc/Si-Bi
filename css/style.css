@@ -67,6 +67,12 @@
   border-width: 2px;
   cursor: pointer; }
 
+.footer-s .footer-subscribe, .breakdown-s .breakdown-checkout {
+  background-color: #FA6755;
+  border: none;
+  margin: 0px 0px 20px 0px;
+  cursor: pointer; }
+
 .choose-s .collection-at, .schedule-s .schedule-s-content .schedule-button {
   display: flex;
   align-items: center;
@@ -97,17 +103,25 @@ h3:after, h5:after {
 .footer-s {
   color: #ffffff;
   background-color: #372248; }
+  .footer-s .footer-d {
+    padding: 50px 30px 70px 30px; }
+    .footer-s .footer-d .footer-titles {
+      font-size: 30px; }
   .footer-s .form-row {
     margin-left: 0px !important; }
   .footer-s ul li {
-    list-style: none; }
+    list-style: none;
+    margin-bottom: 10px; }
     .footer-s ul li a {
       color: #ffffff;
-      text-decoration: none; }
+      text-decoration: none;
+      margin-bottom: 5px; }
 
 .copyright {
   color: #ffffff;
   background-color: #483958; }
+  .copyright .copyright-text {
+    margin: 40px 0px 40px 30px; }
 
 body {
   font-family: Circular Std;
@@ -230,11 +244,7 @@ nav {
   .breakdown-s .breakdown-amounts {
     margin: 10px 0px 0px 0px; }
   .breakdown-s .breakdown-checkout {
-    background-color: #FA6755;
-    border: none;
-    width: 45%;
-    margin: 0px 0px 20px 0px;
-    cursor: pointer; }
+    width: 45%; }
 
 .questions-s {
   color: #000000;

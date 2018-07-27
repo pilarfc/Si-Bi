@@ -68,6 +68,13 @@
   cursor: pointer;
 }
 
+%bg-button {
+  background-color: $orange;
+  border: none;
+  margin: 0px 0px 20px 0px;
+  cursor: pointer;
+}
+
 %center {
   display: flex;
   align-items: center;

@@ -1,21 +1,35 @@
 .footer-s {
   color: $white;
   background-color: $main-purple;
+  .footer-d {
+    padding: 50px 30px 70px 30px;
+    .footer-titles {
+      font-size: 30px;
+    }
+  }
   .form-row {
     margin-left: 0px !important;
   }
   ul {
     li {
       list-style: none;
+      margin-bottom: 10px;
       a{
         color: $white;
         text-decoration: none;
+        margin-bottom: 5px;
       }
     }
+  }
+  .footer-subscribe {
+    @extend %bg-button;
   }
 }
 
 .copyright {
   color: $white;
   background-color: $light-purple;
+  .copyright-text {
+    margin: 40px 0px 40px 30px;
+  }
 }

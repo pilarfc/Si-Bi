@@ -208,11 +208,8 @@ nav {
     margin: 10px 0px 0px 0px;
   }
   .breakdown-checkout {
-    background-color: $orange;
-    border: none;
+    @extend %bg-button;
     width: 45%;
-    margin: 0px 0px 20px 0px;
-    cursor: pointer;
   }
 }
 
