@@ -80,3 +80,11 @@
   align-items: center;
   justify-content: center;
 }
+
+%quantity-button-border-radius {
+  border-radius: 10px;
+}
+
+%quantity-button-border {
+  border: 1px solid $grey-borders;
+}

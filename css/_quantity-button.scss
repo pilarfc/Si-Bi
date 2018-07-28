@@ -1,0 +1,48 @@
+.quantity-button {
+  margin: 0 auto;
+  text-align: center;
+  @extend %quantity-button-border;
+  @extend %quantity-button-border-radius;
+}
+
+.value-button {
+  margin: 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+#increase , #decrease {
+  i {
+    width: 30px;
+    @extend %quantity-button-border;
+    @extend %quantity-button-border-radius;
+  }
+}
+
+#decrease {
+  margin: 0px 0px 10px 0px;
+}
+
+input#number {
+  font-size: 30px;
+  text-align: center;
+  @extend %quantity-button-border;
+  @extend %quantity-button-border-radius;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
