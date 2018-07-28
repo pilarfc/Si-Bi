@@ -23,10 +23,14 @@ nav {
   font-family: $brand-bold;
   font-size: 13px;
   letter-spacing: 0.20px;
+  .navbar-brand {
+    margin-left: 2rem;
+  }
   div {
     ul {
       li {
         list-style: none;
+        margin-left: 20px;
         a{
           color: $main-purple;
           text-decoration: none;
@@ -34,8 +38,8 @@ nav {
       }
     }
     .nav-b-touch {
+      border: 1px solid $main-purple;
       border-radius: 5px;
-      border-color: $main-purple !important;
       border-width: 2px;
     }
     .nav-b-started {
@@ -214,7 +218,7 @@ nav {
     }
     span {
       color: $grey-text;
-    }    
+    }
   }
   .quantity-numbers {
     p:nth-of-type(1) {
@@ -251,6 +255,16 @@ nav {
   .breakdown-checkout {
     @extend %bg-button;
     width: 45%;
+  }
+  .payment-methods {
+    img:nth-of-type(1) {
+      max-width: 40%;
+    }
+  }
+  .secure-server {
+    img:nth-of-type(1) {
+      max-width: 30%;
+    }
   }
 }
 

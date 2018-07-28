@@ -178,14 +178,17 @@ nav {
   font-family: CircularStd-Bold;
   font-size: 13px;
   letter-spacing: 0.20px; }
+  nav .navbar-brand {
+    margin-left: 2rem; }
   nav div ul li {
-    list-style: none; }
+    list-style: none;
+    margin-left: 20px; }
     nav div ul li a {
       color: #372248;
       text-decoration: none; }
   nav div .nav-b-touch {
+    border: 1px solid #372248;
     border-radius: 5px;
-    border-color: #372248 !important;
     border-width: 2px; }
   nav div .nav-b-started {
     background-color: #F46036;
@@ -311,6 +314,10 @@ nav {
     margin: 10px 0px 0px 0px; }
   .breakdown-s .breakdown-checkout {
     width: 45%; }
+  .breakdown-s .payment-methods img:nth-of-type(1) {
+    max-width: 40%; }
+  .breakdown-s .secure-server img:nth-of-type(1) {
+    max-width: 30%; }
 
 .questions-s {
   color: #000000;
