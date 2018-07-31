@@ -184,7 +184,7 @@ nav {
     list-style: none;
     margin-left: 20px; }
     nav div ul li a {
-      color: #372248;
+      color: #372248 !important;
       text-decoration: none; }
   nav div .nav-b-touch {
     border: 1px solid #372248;
@@ -194,7 +194,12 @@ nav {
     background-color: #F46036;
     border-radius: 5px; }
     nav div .nav-b-started a {
-      color: #ffffff; }
+      color: #ffffff !important; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    nav div .nav-b-touch, nav div .nav-b-started {
+      width: 100px;
+      text-align: center;
+      margin-bottom: 10px; } }
 
 .choose-s {
   color: #ffffff;
@@ -209,8 +214,18 @@ nav {
       color: #5B85AA;
       background-color: #ffffff;
       width: 360px;
-      height: 378px;
+      height: 378px; }
+      @media (max-width: 767px) {
+        .choose-s .choose-s__services .choose-s__walkin-div, .choose-s .choose-s__services .choose-s__concierge-div {
+          margin: 15px 0px 0px 0px; } }
+    .choose-s .choose-s__services .choose-s__walkin-div {
       margin-left: 30px; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .choose-s .choose-s__services .choose-s__walkin-div {
+          margin-left: 0px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .choose-s .choose-s__services .choose-s__concierge-div {
+        margin-left: 30px; } }
   .choose-s .choose-s__subtitles {
     margin: 40px 0px 0px 0px; }
   .choose-s .concierge-subtitle {
@@ -225,6 +240,9 @@ nav {
 .walkin-s {
   color: #000000;
   background-color: #ffffff; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .walkin-s .city-card {
+      width: 100%; } }
   .walkin-s .walkin--title {
     color: #372248;
     margin: 50px 0px 40px 0px; }
@@ -246,6 +264,9 @@ nav {
   .partner-s .partner-card .cards-fontsize {
     font-size: 12px;
     margin: auto; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .partner-s .partner-card {
+      width: 100%; } }
   .partner-s .doctor-card:focus, .partner-s .partner-card:focus {
     outline: 0; }
   .partner-s .blood-partner {
@@ -259,6 +280,9 @@ nav {
     font-size: 20px; }
   .storage-s .storage-divs .storage-card .storage-price {
     font-size: 50px; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .storage-s .storage-divs .storage-card {
+      width: 100%; } }
 .storage-s .storage-divs .storage-la-card {
   margin: 0; }
 .storage-s .storage-divs .storage-la-card:focus, .storage-s .storage-divs .storage-seattle-card:focus {
@@ -287,6 +311,11 @@ nav {
   .second-order-s .quantity-button p {
     margin: 10px 0px 0px 0px;
     font-size: 12px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .second-order-s .quantity-button p {
+        font-size: 9px; }
+        .second-order-s .quantity-button p input#number {
+          width: 90%; } }
 .second-order-s .quantity-line, .second-order-s .quantity-numbers {
   font-size: 22px; }
 .second-order-s .quantity-line {

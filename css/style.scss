@@ -32,7 +32,7 @@ nav {
         list-style: none;
         margin-left: 20px;
         a{
-          color: $main-purple;
+          color: $main-purple !important;
           text-decoration: none;
         }
       }
@@ -46,7 +46,14 @@ nav {
       background-color: $vibrant-orange;
       border-radius: 5px;
       a {
-        color: $white;
+        color: $white !important;
+      }
+    }
+    .nav-b-touch, .nav-b-started {
+      @media #{$tablet} {
+        width: 100px;
+        text-align: center;
+        margin-bottom: 10px;
       }
     }
   }
@@ -73,7 +80,20 @@ nav {
       background-color: $white;
       width: 360px;
       height: 378px;
+      @media #{$down-xs} {
+        margin: 15px 0px 0px 0px;
+      }
+    }
+    .choose-s__walkin-div {
       margin-left: 30px;
+      @media #{$tablet} {
+        margin-left: 0px
+      }
+    }
+    .choose-s__concierge-div {
+      @media #{$tablet} {
+        margin-left: 30px
+      }
     }
   }
   .choose-s__subtitles {
@@ -103,6 +123,9 @@ nav {
   background-color: $white;
   .city-card {
     @extend %cards-structure;
+    @media #{$tablet} {
+      width: 100%;
+    }
   }
   .walkin--title {
     @extend %bold-titles;
@@ -140,6 +163,9 @@ nav {
       font-size: 12px;
       margin: auto;
     }
+    @media #{$tablet} {
+      width: 100%;
+    }
   }
   .doctor-card:hover, .partner-card:hover {
     @extend %divs-shadows;
@@ -168,6 +194,9 @@ nav {
       }
       .storage-price {
         font-size: 50px;
+      }
+      @media #{$tablet} {
+        width: 100%;
       }
     }
     .storage-la-card {
@@ -216,6 +245,12 @@ nav {
     p {
       margin: 10px 0px 0px 0px;
       font-size: 12px;
+      @media #{$tablet} {
+        font-size: 9px;
+        input#number {
+          width: 90%;
+        }
+      }
     }
   }
   .quantity-line, .quantity-numbers {

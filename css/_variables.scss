@@ -43,3 +43,16 @@ src: url(../assets/fonts/CircularStd-Book.otf);
 //BORDER
 
 $c-border: 10px;
+
+
+// Breakpoints
+
+$down-xs: "(max-width: 767px)";
+$up-xs: "(min-width: 768px)";
+
+$phone-portrait: "(min-width: 0px) and (max-width: 400px)";
+$phone-landscape: "(min-width: 421px) and (max-width: 767px)";
+
+$tablet: "(min-width:  768px) and (max-width: 991px)";
+$Desktop-xs: "(min-width:  992px) and (max-width: 1199px)";
+$desktop: "(min-width:  992px)";
