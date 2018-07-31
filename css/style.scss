@@ -282,8 +282,13 @@ nav {
       @media #{$tablet} {
         font-size: 9px;
         input#number {
-          width: 90%;
+          width: 100%;
         }
+      }
+    }
+    input#number {
+      @media #{$tablet} {
+        width: 100%;
       }
     }
   }
@@ -304,7 +309,13 @@ nav {
     p:nth-of-type(1) {
       margin: 50px 0px 5px 0px;
       @media #{$phone-xs} {
-      margin: 0px 0px 5px 0px;
+      margin: 60px 0px 5px 15px;
+      }
+    }
+    p:nth-of-type(2) {
+      margin: 50px 0px 5px 0px;
+      @media #{$phone-xs} {
+      margin: 138px 0px 5px 0px;
       }
     }
   }
@@ -387,17 +398,29 @@ nav {
     }
     .individual-question:nth-of-type(1) {
       margin: 0px 0px 0px 20px;
+      @media #{$phone-xs} {
+        margin: 0px 0px 0px 0px;
+      }
     }
     .individual-question:nth-of-type(2) {
-      margin: 0px 0px 50px 20px;
+      margin: 0px 0px 0px 0px;
+      @media #{$phone-xs} {
+        margin: 0px 0px 0px 0px;
+      }
     }
     .individual-question-2:nth-of-type(1) {
       margin: 0px 20px 10px 20px;
       overflow-wrap: break-word;
+      @media #{$phone-xs} {
+        margin: 0px 0px 0px 0px;
+      }
     }
     .individual-question-2:nth-of-type(2) {
       margin: 0px 20px 10px 20px;
       overflow-wrap: break-word;
+      @media #{$phone-xs} {
+        margin: 0px 0px 0px 0px;
+      }
     }
   }
   .faq--title {

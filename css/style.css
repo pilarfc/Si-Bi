@@ -345,7 +345,10 @@ nav {
       .second-order-s .quantity-button p {
         font-size: 9px; }
         .second-order-s .quantity-button p input#number {
-          width: 90%; } }
+          width: 100%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .second-order-s .quantity-button input#number {
+      width: 100%; } }
 .second-order-s .quantity-line, .second-order-s .quantity-numbers {
   font-size: 22px; }
 .second-order-s .quantity-line {
@@ -359,7 +362,12 @@ nav {
   margin: 50px 0px 5px 0px; }
   @media (min-width: 320px) and (max-width: 480px) {
     .second-order-s .quantity-numbers p:nth-of-type(1) {
-      margin: 0px 0px 5px 0px; } }
+      margin: 60px 0px 5px 15px; } }
+.second-order-s .quantity-numbers p:nth-of-type(2) {
+  margin: 50px 0px 5px 0px; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .second-order-s .quantity-numbers p:nth-of-type(2) {
+      margin: 138px 0px 5px 0px; } }
 
 .discount-code-s {
   color: #ffffff;
@@ -418,14 +426,26 @@ nav {
       padding: 0px 0px 20px 15px; }
   .questions-s .question-div .individual-question:nth-of-type(1) {
     margin: 0px 0px 0px 20px; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .questions-s .question-div .individual-question:nth-of-type(1) {
+        margin: 0px 0px 0px 0px; } }
   .questions-s .question-div .individual-question:nth-of-type(2) {
-    margin: 0px 0px 50px 20px; }
+    margin: 0px 0px 0px 0px; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .questions-s .question-div .individual-question:nth-of-type(2) {
+        margin: 0px 0px 0px 0px; } }
   .questions-s .question-div .individual-question-2:nth-of-type(1) {
     margin: 0px 20px 10px 20px;
     overflow-wrap: break-word; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .questions-s .question-div .individual-question-2:nth-of-type(1) {
+        margin: 0px 0px 0px 0px; } }
   .questions-s .question-div .individual-question-2:nth-of-type(2) {
     margin: 0px 20px 10px 20px;
     overflow-wrap: break-word; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .questions-s .question-div .individual-question-2:nth-of-type(2) {
+        margin: 0px 0px 0px 0px; } }
   .questions-s .faq--title {
     color: #372248;
     padding: 40px 0px 40px 0px; }
