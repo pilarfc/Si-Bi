@@ -50,7 +50,7 @@ nav {
       }
     }
     .nav-b-touch, .nav-b-started {
-      @media #{$tablet} {
+      @media #{$down-tablet} {
         width: 100px;
         text-align: center;
         margin-bottom: 10px;
@@ -83,14 +83,23 @@ nav {
       @media #{$down-xs} {
         margin: 15px 0px 0px 0px;
       }
+      @media #{$phone-xs} {
+        width: 100%;
+      }
     }
     .choose-s__walkin-div {
-      margin-left: 30px;
+      @media #{$phone-xs} {
+        margin-left: 0px;
+      }
       @media #{$tablet} {
         margin-left: 0px
       }
     }
     .choose-s__concierge-div {
+      margin-left: 30px;
+      @media #{$phone-xs} {
+        margin-left: 0px;
+      }
       @media #{$tablet} {
         margin-left: 30px
       }
@@ -123,6 +132,9 @@ nav {
   background-color: $white;
   .city-card {
     @extend %cards-structure;
+    @media #{$phone-xs} {
+      width: 100%;
+    }
     @media #{$tablet} {
       width: 100%;
     }
@@ -140,6 +152,11 @@ nav {
     }
     .la-div:focus, .seattle-div:focus {
       outline: 0;
+    }
+    .la-div {
+      @media #{$phone-xs} {
+        margin-bottom: 15px;
+      }
     }
   }
 }
@@ -163,8 +180,16 @@ nav {
       font-size: 12px;
       margin: auto;
     }
+    @media #{$phone-xs} {
+      width: 100%;
+    }
     @media #{$tablet} {
       width: 100%;
+    }
+  }
+  .doctor-card {
+    @media #{$phone-xs} {
+      margin-bottom: 15px;
     }
   }
   .doctor-card:hover, .partner-card:hover {
@@ -195,12 +220,18 @@ nav {
       .storage-price {
         font-size: 50px;
       }
+      @media #{$phone-xs} {
+        width: 100%;
+      }
       @media #{$tablet} {
         width: 100%;
       }
     }
     .storage-la-card {
       margin:0;
+      @media #{$phone-xs} {
+        margin-bottom: 15px;
+      }
     }
     .storage-la-card:hover, .storage-seattle-card:hover {
       @extend %divs-shadows;
@@ -242,6 +273,9 @@ nav {
 .second-order-s {
   .quantity-button {
     margin: 30px 0px 30px 0px;
+    @media #{$phone-xs} {
+    margin: 30px 0px 0px 0px;
+    }
     p {
       margin: 10px 0px 0px 0px;
       font-size: 12px;
@@ -269,6 +303,9 @@ nav {
   .quantity-numbers {
     p:nth-of-type(1) {
       margin: 50px 0px 5px 0px;
+      @media #{$phone-xs} {
+      margin: 0px 0px 5px 0px;
+      }
     }
   }
 }
@@ -284,10 +321,16 @@ nav {
     border-radius: $c-border;
     width: 38%;
     margin: 0px 5px 0px 0px;
+    @media #{$phone-xs} {
+      width: auto;
+    }
   }
   .discount-bar__button {
     width: 10%;
     @extend %no-bg-button;
+    @media #{$phone-xs} {
+      width: auto;
+    }
   }
 }
 
@@ -301,15 +344,24 @@ nav {
   .breakdown-checkout {
     @extend %bg-button;
     width: 45%;
+    @media #{$phone-xs} {
+      width: auto;
+    }
   }
   .payment-methods {
     img:nth-of-type(1) {
       max-width: 40%;
+      @media #{$phone-xs} {
+        max-width: 60%;
+      }
     }
   }
   .secure-server {
     img:nth-of-type(1) {
       max-width: 30%;
+      @media #{$phone-xs} {
+        max-width: 50%;
+      }
     }
   }
 }
@@ -341,9 +393,11 @@ nav {
     }
     .individual-question-2:nth-of-type(1) {
       margin: 0px 20px 10px 20px;
+      overflow-wrap: break-word;
     }
     .individual-question-2:nth-of-type(2) {
       margin: 0px 20px 10px 20px;
+      overflow-wrap: break-word;
     }
   }
   .faq--title {
@@ -362,14 +416,29 @@ nav {
       button {
         @extend %no-bg-button;
       }
+      @media #{$phone-xs} {
+      margin-bottom: 30px;
+      }
     }
     .schedule-s-text:nth-of-type(1) {
       font-size: 35px;
       margin: 50px 0px 0px 30px;
+
     }
     .schedule-s-text:nth-of-type(2) {
       font-size: 18px;
       margin: 0px 0px 50px 30px;
+      @media #{$phone-xs} {
+      margin: 0px 0px 25px 30px;
+      }
+    }
+  }
+}
+
+.footer-d {
+  ul {
+    @media #{$phone-xs} {
+      margin-top: 25px;
     }
   }
 }

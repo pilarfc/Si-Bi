@@ -195,7 +195,7 @@ nav {
     border-radius: 5px; }
     nav div .nav-b-started a {
       color: #ffffff !important; }
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (max-width: 991px) {
     nav div .nav-b-touch, nav div .nav-b-started {
       width: 100px;
       text-align: center;
@@ -218,14 +218,23 @@ nav {
       @media (max-width: 767px) {
         .choose-s .choose-s__services .choose-s__walkin-div, .choose-s .choose-s__services .choose-s__concierge-div {
           margin: 15px 0px 0px 0px; } }
-    .choose-s .choose-s__services .choose-s__walkin-div {
-      margin-left: 30px; }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .choose-s .choose-s__services .choose-s__walkin-div {
-          margin-left: 0px; } }
+      @media (min-width: 320px) and (max-width: 480px) {
+        .choose-s .choose-s__services .choose-s__walkin-div, .choose-s .choose-s__services .choose-s__concierge-div {
+          width: 100%; } }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .choose-s .choose-s__services .choose-s__walkin-div {
+        margin-left: 0px; } }
     @media (min-width: 768px) and (max-width: 991px) {
-      .choose-s .choose-s__services .choose-s__concierge-div {
-        margin-left: 30px; } }
+      .choose-s .choose-s__services .choose-s__walkin-div {
+        margin-left: 0px; } }
+    .choose-s .choose-s__services .choose-s__concierge-div {
+      margin-left: 30px; }
+      @media (min-width: 320px) and (max-width: 480px) {
+        .choose-s .choose-s__services .choose-s__concierge-div {
+          margin-left: 0px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .choose-s .choose-s__services .choose-s__concierge-div {
+          margin-left: 30px; } }
   .choose-s .choose-s__subtitles {
     margin: 40px 0px 0px 0px; }
   .choose-s .concierge-subtitle {
@@ -240,6 +249,9 @@ nav {
 .walkin-s {
   color: #000000;
   background-color: #ffffff; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .walkin-s .city-card {
+      width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .walkin-s .city-card {
       width: 100%; } }
@@ -251,6 +263,9 @@ nav {
     margin: 30px 0px 60px 0px; }
     .walkin-s .cities-divs .la-div:focus, .walkin-s .cities-divs .seattle-div:focus {
       outline: 0; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .walkin-s .cities-divs .la-div {
+        margin-bottom: 15px; } }
 
 .partner-s {
   color: #000000;
@@ -264,9 +279,15 @@ nav {
   .partner-s .partner-card .cards-fontsize {
     font-size: 12px;
     margin: auto; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .partner-s .partner-card {
+      width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .partner-s .partner-card {
       width: 100%; } }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .partner-s .doctor-card {
+      margin-bottom: 15px; } }
   .partner-s .doctor-card:focus, .partner-s .partner-card:focus {
     outline: 0; }
   .partner-s .blood-partner {
@@ -280,11 +301,17 @@ nav {
     font-size: 20px; }
   .storage-s .storage-divs .storage-card .storage-price {
     font-size: 50px; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .storage-s .storage-divs .storage-card {
+      width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .storage-s .storage-divs .storage-card {
       width: 100%; } }
 .storage-s .storage-divs .storage-la-card {
   margin: 0; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .storage-s .storage-divs .storage-la-card {
+      margin-bottom: 15px; } }
 .storage-s .storage-divs .storage-la-card:focus, .storage-s .storage-divs .storage-seattle-card:focus {
   outline: 0; }
 .storage-s .chooselo--header {
@@ -308,6 +335,9 @@ nav {
 
 .second-order-s .quantity-button {
   margin: 30px 0px 30px 0px; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .second-order-s .quantity-button {
+      margin: 30px 0px 0px 0px; } }
   .second-order-s .quantity-button p {
     margin: 10px 0px 0px 0px;
     font-size: 12px; }
@@ -327,6 +357,9 @@ nav {
     color: #989898; }
 .second-order-s .quantity-numbers p:nth-of-type(1) {
   margin: 50px 0px 5px 0px; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .second-order-s .quantity-numbers p:nth-of-type(1) {
+      margin: 0px 0px 5px 0px; } }
 
 .discount-code-s {
   color: #ffffff;
@@ -338,8 +371,14 @@ nav {
     border-radius: 10px;
     width: 38%;
     margin: 0px 5px 0px 0px; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .discount-code-s .discount-bar__input {
+        width: auto; } }
   .discount-code-s .discount-bar__button {
     width: 10%; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .discount-code-s .discount-bar__button {
+        width: auto; } }
 
 .breakdown-s {
   width: 100%;
@@ -349,10 +388,19 @@ nav {
     margin: 10px 0px 0px 0px; }
   .breakdown-s .breakdown-checkout {
     width: 45%; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .breakdown-s .breakdown-checkout {
+        width: auto; } }
   .breakdown-s .payment-methods img:nth-of-type(1) {
     max-width: 40%; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .breakdown-s .payment-methods img:nth-of-type(1) {
+        max-width: 60%; } }
   .breakdown-s .secure-server img:nth-of-type(1) {
     max-width: 30%; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .breakdown-s .secure-server img:nth-of-type(1) {
+        max-width: 50%; } }
 
 .questions-s {
   color: #000000;
@@ -373,9 +421,11 @@ nav {
   .questions-s .question-div .individual-question:nth-of-type(2) {
     margin: 0px 0px 50px 20px; }
   .questions-s .question-div .individual-question-2:nth-of-type(1) {
-    margin: 0px 20px 10px 20px; }
+    margin: 0px 20px 10px 20px;
+    overflow-wrap: break-word; }
   .questions-s .question-div .individual-question-2:nth-of-type(2) {
-    margin: 0px 20px 10px 20px; }
+    margin: 0px 20px 10px 20px;
+    overflow-wrap: break-word; }
   .questions-s .faq--title {
     color: #372248;
     padding: 40px 0px 40px 0px; }
@@ -383,11 +433,21 @@ nav {
 .schedule-s {
   color: #ffffff;
   background-color: #FA6755; }
+  @media (min-width: 320px) and (max-width: 480px) {
+    .schedule-s .schedule-s-content .schedule-button {
+      margin-bottom: 30px; } }
   .schedule-s .schedule-s-content .schedule-s-text:nth-of-type(1) {
     font-size: 35px;
     margin: 50px 0px 0px 30px; }
   .schedule-s .schedule-s-content .schedule-s-text:nth-of-type(2) {
     font-size: 18px;
     margin: 0px 0px 50px 30px; }
+    @media (min-width: 320px) and (max-width: 480px) {
+      .schedule-s .schedule-s-content .schedule-s-text:nth-of-type(2) {
+        margin: 0px 0px 25px 30px; } }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .footer-d ul {
+    margin-top: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
