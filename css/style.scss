@@ -50,7 +50,7 @@ nav {
       }
     }
     .nav-b-touch, .nav-b-started {
-      @media #{$tablet} {
+      @media #{$down-tablet} {
         width: 100px;
         text-align: center;
         margin-bottom: 10px;

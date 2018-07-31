@@ -195,7 +195,7 @@ nav {
     border-radius: 5px; }
     nav div .nav-b-started a {
       color: #ffffff !important; }
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (max-width: 991px) {
     nav div .nav-b-touch, nav div .nav-b-started {
       width: 100px;
       text-align: center;
