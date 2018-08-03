@@ -10,7 +10,7 @@
 @font-face {
   font-family: CircularStd-BookItalic;
   src: url(../assets/fonts/CircularStd-BookItalic.otf); }
-.choose-s .choose-s__title, .choose-s .choose-s__subtitles, .choose-s .choose-s__price, .walkin-s .walkin--title, .storage-s .chooselo--header, .first-order-s .your-order__title, .questions-s .faq--title {
+.choose-s .choose-s__title, .choose-s .choose-s__subtitles, .choose-s .choose-s__price, .m-section .m-section--title, .storage-s .chooselo--header, .first-order-s .your-order__title, .questions-s .faq--title {
   font-family: CircularStd-Bold; }
 
 .choose-s .choose-s__subtitles {
@@ -31,7 +31,7 @@
   font-size: 40px;
   color: #372248; }
 
-.walkin-s .city-card, .partner-s .partner-card, .storage-s .storage-divs .storage-card {
+.m-section .city-card, .partner-s .partner-card, .storage-s .storage-divs .storage-card {
   width: 330px;
   height: 177px;
   background-color: #ffffff;
@@ -54,7 +54,7 @@
   -webkit-justify-content: center;
   justify-content: center; }
 
-.walkin-s .cities-divs .la-div:hover, .walkin-s .cities-divs .seattle-div:hover, .partner-s .doctor-card:hover, .partner-s .partner-card:hover, .storage-s .storage-divs .storage-la-card:hover, .storage-s .storage-divs .storage-seattle-card:hover {
+.m-section .cities-divs .ind-block:hover, .m-section .cities-divs .seattle-div:hover, .partner-s .doctor-card:hover, .partner-s .partner-card:hover, .storage-s .storage-divs .storage-la-card:hover, .storage-s .storage-divs .storage-seattle-card:hover {
   -webkit-box-shadow: 0px 0px 10px 1px #4f4f4f;
   -moz-box-shadow: 0px 0px 10px 1px #4f4f4f;
   box-shadow: 0px 0px 10px 1px #4f4f4f; }
@@ -78,10 +78,10 @@
   align-items: center;
   justify-content: center; }
 
-.quantity-button, #increase i, #decrease i, input#number {
+.quantity-button, #increase i, #decrease i, input#quantity {
   border-radius: 10px; }
 
-.quantity-button, #increase i, #decrease i, input#number {
+.quantity-button, #increase i, #decrease i, input#quantity {
   border: 1px solid #979797; }
 
 h3, h5 {
@@ -128,7 +128,7 @@ h3:after, h5:after {
 #decrease {
   margin: 0px 0px 10px 0px; }
 
-input#number {
+input#quantity {
   font-size: 30px;
   text-align: center;
   margin: 0px;
@@ -186,6 +186,34 @@ nav {
     nav div ul li a {
       color: #372248 !important;
       text-decoration: none; }
+  nav div .effect-link {
+    position: relative; }
+  nav div .effect-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #372248;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+  nav div .effect-link:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  nav div .effect-git-button:hover {
+    background-color: #372248;
+    transform: scale(1.1) perspective(1px);
+    transition: .4s ease; }
+    nav div .effect-git-button:hover a {
+      color: #ffffff !important; }
+  nav div .effect-gs-button:hover {
+    transform: scale(1.1) perspective(1px);
+    transition: .4s ease; }
   nav div .nav-b-touch {
     border: 1px solid #372248;
     border-radius: 5px;
@@ -246,25 +274,25 @@ nav {
     height: 50px;
     margin: 10px 30px 20px 30px; }
 
-.walkin-s {
+.m-section {
   color: #000000;
   background-color: #ffffff; }
   @media (min-width: 320px) and (max-width: 480px) {
-    .walkin-s .city-card {
+    .m-section .city-card {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .walkin-s .city-card {
+    .m-section .city-card {
       width: 100%; } }
-  .walkin-s .walkin--title {
+  .m-section .m-section--title {
     color: #372248;
     margin: 50px 0px 40px 0px; }
-  .walkin-s .cities-divs {
+  .m-section .cities-divs {
     font-size: 1.75rem;
     margin: 30px 0px 60px 0px; }
-    .walkin-s .cities-divs .la-div:focus, .walkin-s .cities-divs .seattle-div:focus {
+    .m-section .cities-divs .ind-block:focus, .m-section .cities-divs .seattle-div:focus {
       outline: 0; }
     @media (min-width: 320px) and (max-width: 480px) {
-      .walkin-s .cities-divs .la-div {
+      .m-section .cities-divs .ind-block {
         margin-bottom: 15px; } }
 
 .partner-s {
@@ -344,10 +372,10 @@ nav {
     @media (min-width: 768px) and (max-width: 991px) {
       .second-order-s .quantity-button p {
         font-size: 9px; }
-        .second-order-s .quantity-button p input#number {
+        .second-order-s .quantity-button p input#quantity {
           width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .second-order-s .quantity-button input#number {
+    .second-order-s .quantity-button input#quantity {
       width: 100%; } }
 .second-order-s .quantity-line, .second-order-s .quantity-numbers {
   font-size: 22px; }
