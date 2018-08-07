@@ -10,7 +10,7 @@
 @font-face {
   font-family: CircularStd-BookItalic;
   src: url(../assets/fonts/CircularStd-BookItalic.otf); }
-.choose-s .choose-s__title, .choose-s .choose-s__subtitles, .choose-s .choose-s__price, .m-section .m-section--title, .storage-s .chooselo--header, .first-order-s .your-order__title, .questions-s .faq--title {
+.choose-s .choose-s__title, .choose-s .choose-s__subtitles, .choose-s .choose-s__price, .m-section .m-section--title, .storage-s .chooselo--header, .storage-plans .chooselo--header, .first-order-s .your-order__title, .questions-s .faq--title {
   font-family: CircularStd-Bold; }
 
 .choose-s .choose-s__subtitles {
@@ -22,7 +22,7 @@
   margin-top: 5px;
   margin-bottom: 0; }
 
-.storage-s hr {
+.storage-s hr, .storage-plans hr {
   width: 150px;
   margin-top: 5px;
   margin-bottom: 0; }
@@ -31,7 +31,7 @@
   font-size: 40px;
   color: #372248; }
 
-.m-section .city-card, .partner-s .partner-card, .storage-s .storage-divs .storage-card {
+.m-section .city-card, .partner-s .partner-card, .storage-s .storage-divs .storage-card, .storage-plans .storage-divs .storage-card {
   width: 330px;
   height: 177px;
   background-color: #ffffff;
@@ -54,10 +54,10 @@
   -webkit-justify-content: center;
   justify-content: center; }
 
-.m-section .cities-divs .ind-block:hover, .m-section .cities-divs .seattle-div:hover, .partner-s .doctor-card:hover, .partner-s .partner-card:hover, .storage-s .storage-divs .storage-la-card:hover, .storage-s .storage-divs .storage-seattle-card:hover {
-  -webkit-box-shadow: 0px 0px 10px 1px #4f4f4f;
-  -moz-box-shadow: 0px 0px 10px 1px #4f4f4f;
-  box-shadow: 0px 0px 10px 1px #4f4f4f; }
+.m-section .cities-divs .ind-block:hover, .m-section .cities-divs .seattle-div:hover, .partner-s .doctor-card:hover, .partner-s .partner-card:hover, .storage-s .storage-divs .storage-la-card:hover, .storage-s .storage-divs .storage-seattle-card:hover, .storage-plans .storage-divs .storage-la-card:hover, .storage-plans .storage-divs .storage-seattle-card:hover {
+  -webkit-box-shadow: 0px 0px 10px 1px #372248;
+  -moz-box-shadow: 0px 0px 10px 1px #372248;
+  box-shadow: 0px 0px 10px 1px #372248; }
 
 .discount-code-s .discount-bar__button, .schedule-s .schedule-s-content .schedule-button button {
   border-radius: 10px;
@@ -321,30 +321,30 @@ nav {
   .partner-s .blood-partner {
     background-color: #F0F0F0; }
 
-.storage-s p {
+.storage-s p, .storage-plans p {
   margin-bottom: 0; }
-.storage-s .storage-divs .storage-card {
+.storage-s .storage-divs .storage-card, .storage-plans .storage-divs .storage-card {
   height: 302px; }
-  .storage-s .storage-divs .storage-card .storage-fontsize {
+  .storage-s .storage-divs .storage-card .storage-fontsize, .storage-plans .storage-divs .storage-card .storage-fontsize {
     font-size: 20px; }
-  .storage-s .storage-divs .storage-card .storage-price {
+  .storage-s .storage-divs .storage-card .storage-price, .storage-plans .storage-divs .storage-card .storage-price {
     font-size: 50px; }
   @media (min-width: 320px) and (max-width: 480px) {
-    .storage-s .storage-divs .storage-card {
+    .storage-s .storage-divs .storage-card, .storage-plans .storage-divs .storage-card {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .storage-s .storage-divs .storage-card {
+    .storage-s .storage-divs .storage-card, .storage-plans .storage-divs .storage-card {
       width: 100%; } }
-.storage-s .storage-divs .storage-la-card {
+.storage-s .storage-divs .storage-la-card, .storage-plans .storage-divs .storage-la-card {
   margin: 0; }
   @media (min-width: 320px) and (max-width: 480px) {
-    .storage-s .storage-divs .storage-la-card {
+    .storage-s .storage-divs .storage-la-card, .storage-plans .storage-divs .storage-la-card {
       margin-bottom: 15px; } }
-.storage-s .storage-divs .storage-la-card:focus, .storage-s .storage-divs .storage-seattle-card:focus {
+.storage-s .storage-divs .storage-la-card:focus, .storage-s .storage-divs .storage-seattle-card:focus, .storage-plans .storage-divs .storage-la-card:focus, .storage-plans .storage-divs .storage-seattle-card:focus {
   outline: 0; }
-.storage-s .chooselo--header {
+.storage-s .chooselo--header, .storage-plans .chooselo--header {
   margin: 50px 0px 0px 0px; }
-.storage-s .storage-divs {
+.storage-s .storage-divs, .storage-plans .storage-divs {
   margin: 25px 0px 60px 0px; }
 
 .first-order-s {

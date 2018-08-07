@@ -142,10 +142,11 @@
       <div class="row text-center partners-divs">
         <div class="col"></div>
         <div class="col-sm-12 col-md-5 col-lg-3">
-          <button class="partner-card doctor-card">
+          <label for="Doctor" class="partner-card doctor-card">
             <div class="row">
               <div class="col-1"></div>
               <div class="">
+                <input type="radio" value="Doctor">
                 <img src="assets/img/doctor.png" width="125" alt="Doctor">
               </div>
               <div class="col-6 cards-fontsize">
@@ -154,13 +155,14 @@
                   West Hollywood, CA 90069</p>
               </div>
             </div>
-          </button>
+          </label>
         </div>
         <div class="col-sm-12 col-md-5 col-lg-3">
-          <button class="partner-card blood-partner">
+          <label for="Partner2" class="partner-card blood-partner">
             <div class="row">
               <div class="col-1"></div>
               <div class="">
+                <input type="radio" value="Partner2">
                 <img src="assets/img/partner2.png" width="125" alt="Partner">
               </div>
               <div class="col-6 cards-fontsize">
@@ -169,7 +171,7 @@
                   Seattle, WA 98104</p>
               </div>
             </div>
-          </button>
+          </label>
         </div>
         <div class="col"></div>
       </div>
@@ -211,7 +213,7 @@
       <div class="row text-center storage-divs">
         <div class="col"></div>
         <div class="col-sm-12 col-md-5 col-lg-3">
-          <button class="storage-card storage-la-card">
+          <div class="storage-card storage-la-card">
             <div class="row">
               <div class="col-12">
                 <p class="storage-fontsize"><b>StemFreeze<br>Walk-in<br>LA</b></p>
@@ -220,10 +222,10 @@
                 <p class="storage-price"><b>$50</b></p>
               </div>
             </div>
-          </button>
+          </div>
         </div>
         <div class="col-sm-12 col-md-5 col-lg-3">
-          <button class="storage-card storage-seattle-card">
+          <div class="storage-card storage-seattle-card">
             <div class="row">
               <div class="col-12">
                 <p class="storage-fontsize"><b>StemFreeze<br>Walk-in<br>Seattle</b></p>
@@ -232,7 +234,41 @@
                 <p class="storage-price"><b>$50</b></p>
               </div>
             </div>
-          </button>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="storage-plans">
+    <div class="w-container">
+        <h5 class="text-center chooselo--header">Plans</h5>
+      <div class="row text-center storage-divs">
+        <div class="col"></div>
+        <div class="col-sm-12 col-md-5 col-lg-3">
+          <div class="storage-card storage-la-card">
+            <div class="row">
+              <div class="col-12">
+                <p class="storage-fontsize"><b>StemFreeze<br>Walk-in<br>LA</b></p>
+                <hr width="120px">
+                <p class="storage-fontsize">Annual</p>
+                <p class="storage-price"><b>$50</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-3">
+          <div class="storage-card storage-seattle-card">
+            <div class="row">
+              <div class="col-12">
+                <p class="storage-fontsize"><b>StemFreeze<br>Walk-in<br>Seattle</b></p>
+                <hr width="120px">
+                <p class="storage-fontsize">Annual</p>
+                <p class="storage-price"><b>$50</b></p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col"></div>
       </div>
@@ -262,9 +298,9 @@
         <div class="col-3 col-md-1 col-lg-1">
           <form class="quantity-button">
             <p>Quantity</p>
-            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><i class="fas fa-caret-up"></i></div>
+            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value"><i class="fas fa-plus"></i></div>
             <input type="number" id="quantity" value="0" />
-            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><i class="fas fa-caret-down"></i></div>
+            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><i class="fas fa-minus"></i></div>
           </form>
         </div>
         <div class="col-4 col-md-7 col-lg-7 quantity-line">
